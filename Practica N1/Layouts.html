@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layouts en HTML</title>
+</head>
+<body>
+    <!-- Layout 1-->
+    <div class="container">
+        <h2>Layout 1: Encabezado - Menú - Contenido - Pie</h2>
+        
+        <div class="layout">
+            <div class="header">Encabezado</div>
+            <div class="content-wrapper">
+                <div class="menu">Menú</div>
+                <div class="content">Contenido</div>
+            </div>
+            <div class="footer">Pie</div>
+        </div>
+
+        <style>
+            .layout {
+                width: 80%;
+                max-width: 800px;
+                margin: auto;
+                border: 2px solid black;
+            }
+            .header { 
+                background: #ffcc00; 
+                padding: 20px; 
+                font-size: 18px; 
+                font-weight: bold; 
+            }
+            .content-wrapper { 
+                display: flex; 
+            }
+            .menu { 
+                width: 30%; 
+                background: #66ccff; 
+                padding: 20px; 
+            }
+            .content { 
+                width: 70%; 
+                background: #ccffcc; 
+                padding: 20px; 
+            }
+            .footer { 
+                background: #ff6666; 
+                padding: 20px; 
+                font-weight: bold; 
+            }
+        </style>
+    </div>
+
+    <!-- Layout 2-->
+    <div class="container">
+        <h2>Layout 2: Encabezado - Dos Columnas - Pie</h2>
+
+        <div class="layout">
+            <div class="header">Encabezado</div>
+            <div class="content-wrapper">
+                <div class="col">Columna 1</div>
+                <div class="col">Columna 2</div>
+            </div>
+            <div class="footer">Pie</div>
+        </div>
+
+        <style>
+            .content-wrapper { 
+                display: flex; 
+            }
+            .col { 
+                flex: 1; 
+                background: #ffccff; 
+                padding: 20px; 
+                text-align: center; 
+            }
+        </style>
+    </div>
+
+    <!-- Layout 3-->
+    <div class="container">
+        <h2>Layout 3: Una Sola Columna</h2>
+
+        <div class="layout">
+            <div class="header">Encabezado</div>
+            <div class="content">Contenido</div>
+            <div class="footer">Pie</div>
+        </div>
+
+        <style>
+            .content { 
+                background: #cceeff; 
+                padding: 20px; 
+                text-align: center; 
+            }
+        </style>
+    </div>
+
+    <!-- Layout 4-->
+    <div class="container">
+        <h2>Layout 4: Encabezado - Tres Columnas - Pie</h2>
+
+        <div class="layout">
+            <div class="header">Encabezado</div>
+            <div class="content-wrapper">
+                <div class="col">Columna 1</div>
+                <div class="col">Columna 2</div>
+                <div class="col">Columna 3</div>
+            </div>
+            <div class="footer">Pie</div>
+        </div>
+
+        <style>
+            .content-wrapper { 
+                display: flex; 
+            }
+            .col { 
+                flex: 1; 
+                background: #99ff99; 
+                padding: 20px; 
+                text-align: center; 
+            }
+        </style>
+    </div>
+
+</body>
+</html>
